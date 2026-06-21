@@ -6,7 +6,7 @@ My personal app for my projects
 
 See [`BACKLOG.md`](./BACKLOG.md) for the current product backlog and versioning strategy. The backlog is maintained separately to enable frequent updates without changing the README.
 
-## Proposed Agents
+## Agents
 
 | Agent | Responsibility |
 |---|---|
