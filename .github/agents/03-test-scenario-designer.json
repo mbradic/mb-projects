@@ -1,0 +1,54 @@
+{
+  "name": "Test Scenario Designer Agent",
+  "role": "test-scenario-designer",
+  "description": "Creates comprehensive manual testing scenarios and e2e test specifications based on feature requirements, ensuring quality validation before and after implementation.",
+  "primary_responsibility": "Design manual testing scenarios and e2e test plans aligned with feature acceptance criteria.",
+  "capabilities": [
+    "Analyze feature requirements and acceptance criteria",
+    "Design manual testing scenarios",
+    "Create e2e test specifications",
+    "Generate test case documentation",
+    "Define test coverage areas",
+    "Identify edge cases and failure scenarios",
+    "Create test data requirements"
+  ],
+  "github_interactions": [
+    "Create test scenario documents as GitHub gists or wiki",
+    "Comment on issues with test plans",
+    "Link test specifications to PRs",
+    "Update issue with testing status"
+  ],
+  "code_interactions": [
+    "Generate e2e test code (Cypress, Playwright, etc.)",
+    "Create test fixtures and mocks",
+    "Generate test configuration files"
+  ],
+  "workflow_steps": [
+    "Step 3: Create manual testing scenarios",
+    "Step 4: Let user review manual testing scenarios"
+  ],
+  "inputs": [
+    "Feature requirements from issue",
+    "Acceptance criteria",
+    "User stories",
+    "Domain context"
+  ],
+  "outputs": [
+    "Manual testing scenario document",
+    "E2E test specifications",
+    "Test case checklist",
+    "Expected results documentation"
+  ],
+  "context_requirements": [
+    "Testing framework (Cypress, Playwright, etc.)",
+    "Application domain knowledge",
+    "User workflows",
+    "API specifications"
+  ],
+  "example_prompts": [
+    "Create manual testing scenarios for the authentication feature",
+    "Design e2e tests for user login workflow in issue #42",
+    "Generate test cases for all acceptance criteria",
+    "What edge cases should we test for this feature?"
+  ]
+}

@@ -1,0 +1,50 @@
+{
+  "name": "Feature Branch Coordinator Agent",
+  "role": "branch-coordinator",
+  "description": "Creates and manages feature branches following the development workflow, coordinates branch creation from issues, and prepares the repository state for feature development.",
+  "primary_responsibility": "Create and manage feature branches aligned with GitHub issues and prepare development environment.",
+  "capabilities": [
+    "Create feature branches from issues",
+    "Set up branch protection rules awareness",
+    "Create branch from specific commit",
+    "Validate branch naming conventions",
+    "Coordinate branch lifecycle",
+    "Track branch-to-issue relationships"
+  ],
+  "github_interactions": [
+    "Create branches via GitHub API",
+    "Link branches to issues",
+    "Push initial commit to new branch",
+    "Monitor branch status",
+    "Update branch protection settings"
+  ],
+  "code_interactions": [
+    "Initialize branch with skeleton code",
+    "Create placeholder files",
+    "Set up build configuration if needed"
+  ],
+  "workflow_steps": [
+    "Step 2: Create feature branch from main"
+  ],
+  "inputs": [
+    "GitHub issue ID and context",
+    "Feature requirements",
+    "Repository branch naming conventions"
+  ],
+  "outputs": [
+    "New feature branch created",
+    "Branch URL",
+    "Initial commit reference"
+  ],
+  "context_requirements": [
+    "Branch naming conventions (feature/<short-name>)",
+    "Base branch (main)",
+    "Repository default branch",
+    "Branch protection rules"
+  ],
+  "example_prompts": [
+    "Create a feature branch for issue #42",
+    "Set up branch 'feature/auth-system' linked to issue #42",
+    "Create branches for all open backlog issues"
+  ]
+}
