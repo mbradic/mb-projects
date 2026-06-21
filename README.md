@@ -8,14 +8,7 @@ See [`BACKLOG.md`](./BACKLOG.md) for the current product backlog and versioning 
 
 ## Agents
 
-| Agent | Responsibility |
-|---|---|
-| **Project manager agent** | Interprets natural-language instructions to create, update, or close projects and tasks; keeps status and priority fields consistent. |
-| **Reminder & deadline agent** | Monitors due dates across all projects, fires notifications for upcoming or overdue items, and escalates stalled work. |
-| **Planning agent** | Breaks high-level goals into tasks, suggests realistic timelines, and identifies scheduling conflicts on the timeline. |
-| **Reporting agent** | Generates summaries of completed work, velocity, and next actions on demand or on a scheduled cadence. |
-| **Search & context agent** | Answers natural-language queries about projects and tasks by combining full-text search with embedded project context. |
-| **Import/export agent** | Handles structured data ingestion (CSV, JSON, Markdown) and exports data to external tools or backups. |
+See [`AGENTS.md`](./AGENTS.md) for the current list of agents and their responsibilities.
 
 ## Development Workflow
 
@@ -38,5 +31,5 @@ main
 
 The README and BACKLOG.md are versioned independently:
 
-- **README.md**: Documents the overall project vision, agents, and workflows. Uses semantic versioning (MAJOR.MINOR.PATCH) for significant structural changes to documentation. Updates to this file typically correlate with releases.
+- **README.md**: Documents the overall project vision, agents, and workflows. Uses semantic versioning (MAJOR.MINOR.PATCH) for significant structural changes to documentation. Updates to this file typ[...]
 - **BACKLOG.md**: Maintains the product backlog and can be updated frequently without triggering a version bump to the README. Uses its own semantic versioning scheme to track backlog changes.
