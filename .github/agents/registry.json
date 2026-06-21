@@ -1,0 +1,106 @@
+{
+  "agents": [
+    {
+      "id": "01",
+      "name": "Backlog Manager Agent",
+      "role": "backlog-manager",
+      "file": "01-backlog-manager.json",
+      "description": "Manages the product backlog and initiates workflow for backlog items by creating GitHub issues and coordinating the feature development workflow.",
+      "workflow_step": "Step 1"
+    },
+    {
+      "id": "02",
+      "name": "Feature Branch Coordinator Agent",
+      "role": "branch-coordinator",
+      "file": "02-branch-coordinator.json",
+      "description": "Creates and manages feature branches following the development workflow, coordinates branch creation from issues, and prepares the repository state for feature development.",
+      "workflow_step": "Step 2"
+    },
+    {
+      "id": "03",
+      "name": "Test Scenario Designer Agent",
+      "role": "test-scenario-designer",
+      "file": "03-test-scenario-designer.json",
+      "description": "Creates comprehensive manual testing scenarios and e2e test specifications based on feature requirements, ensuring quality validation before and after implementation.",
+      "workflow_steps": ["Step 3", "Step 4"]
+    },
+    {
+      "id": "04",
+      "name": "Feature Developer Agent",
+      "role": "feature-developer",
+      "file": "04-feature-developer.json",
+      "description": "Implements feature code following approved test scenarios, writes production-ready code with tests, and maintains code quality standards throughout development.",
+      "workflow_step": "Step 5"
+    },
+    {
+      "id": "05",
+      "name": "Deployment Orchestrator Agent",
+      "role": "deployment-orchestrator",
+      "file": "05-deployment-orchestrator.json",
+      "description": "Manages deployment of features to testing environment, orchestrates deployment pipelines, and ensures proper environment configuration.",
+      "workflow_step": "Step 6"
+    },
+    {
+      "id": "06",
+      "name": "E2E Test Runner Agent",
+      "role": "e2e-test-runner",
+      "file": "06-e2e-test-runner.json",
+      "description": "Executes end-to-end tests in the testing environment, reports results, and manages test failure workflows.",
+      "workflow_steps": ["Step 7", "Step 8a"]
+    },
+    {
+      "id": "07",
+      "name": "Code Review Expert Agent",
+      "role": "code-review-expert",
+      "file": "07-code-review-expert.json",
+      "description": "Conducts thorough code reviews focusing on quality, maintainability, security, and performance; provides constructive feedback aligned with development standards.",
+      "workflow_step": "Between Step 5 and Step 6"
+    },
+    {
+      "id": "08",
+      "name": "Workflow Manager Agent",
+      "role": "workflow-manager",
+      "file": "08-workflow-manager.json",
+      "description": "Orchestrates the entire backlog-to-production workflow, monitors progress, coordinates between agents, and ensures smooth transitions between workflow steps.",
+      "workflow_step": "All steps"
+    },
+    {
+      "id": "09",
+      "name": "Development Methodology Expert Agent",
+      "role": "methodology-expert",
+      "file": "09-methodology-expert.json",
+      "description": "Provides expertise on software development best practices, workflow optimization, and process improvements.",
+      "workflow_step": "Throughout"
+    },
+    {
+      "id": "10",
+      "name": "AI Development Advisor Agent",
+      "role": "ai-advisor",
+      "file": "10-ai-advisor.json",
+      "description": "Provides expertise on AI/ML integration, LLM usage, prompt engineering, and AI-powered development practices.",
+      "workflow_step": "Throughout"
+    }
+  ],
+  "workflow_definition": {
+    "steps": [
+      "Step 1: Open an issue (Backlog Manager)",
+      "Step 2: Create feature branch (Branch Coordinator)",
+      "Step 3-4: Create manual testing scenarios (Test Scenario Designer + User Review)",
+      "Step 5: Implement the feature (Feature Developer with Code Review Expert feedback)",
+      "Step 6: Deploy to testing environment (Deployment Orchestrator)",
+      "Step 7-8: Run e2e tests (E2E Test Runner)",
+      "Step 8a: If tests fail, create issue (E2E Test Runner)"
+    ],
+    "supporting_agents": [
+      "Workflow Manager Agent (coordinates all steps)",
+      "Development Methodology Expert Agent (provides guidance)",
+      "AI Development Advisor Agent (advises on AI integration)"
+    ]
+  },
+  "metadata": {
+    "version": "1.0.0",
+    "last_updated": "2026-06-21",
+    "total_agents": 10,
+    "schema_version": "1.0"
+  }
+}

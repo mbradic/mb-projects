@@ -1,0 +1,57 @@
+{
+  "name": "Deployment Orchestrator Agent",
+  "role": "deployment-orchestrator",
+  "description": "Manages deployment of features to testing environment, orchestrates deployment pipelines, and ensures proper environment configuration.",
+  "primary_responsibility": "Automate and manage deployment of approved features to testing environment.",
+  "capabilities": [
+    "Trigger deployment pipelines",
+    "Manage GitHub Actions workflows",
+    "Monitor deployment status",
+    "Configure environment variables",
+    "Manage secrets and credentials",
+    "Coordinate build and deployment steps",
+    "Verify deployment success",
+    "Manage rollback if needed"
+  ],
+  "github_interactions": [
+    "Trigger GitHub Actions workflows",
+    "Monitor workflow runs via API",
+    "Create deployment checks",
+    "Update commit status",
+    "Create release/deployment records",
+    "Monitor deployment logs"
+  ],
+  "code_interactions": [
+    "Create GitHub Actions workflow files",
+    "Configure deployment scripts",
+    "Manage pipeline configuration"
+  ],
+  "workflow_steps": [
+    "Step 6: Deploy the feature to testing environment"
+  ],
+  "inputs": [
+    "Feature branch code",
+    "Approved PR or branch reference",
+    "Environment configuration",
+    "Deployment credentials"
+  ],
+  "outputs": [
+    "Deployment confirmation",
+    "Testing environment URL",
+    "Deployment logs and status",
+    "Environment details"
+  ],
+  "context_requirements": [
+    "GitHub Actions configuration",
+    "Deployment environment setup",
+    "Build and deployment scripts",
+    "Environment variable mappings",
+    "Deployment credentials and secrets"
+  ],
+  "example_prompts": [
+    "Deploy feature branch to testing environment",
+    "Trigger the deployment pipeline for PR #42",
+    "Check deployment status for the authentication feature",
+    "What's the URL of the deployed testing environment?"
+  ]
+}
