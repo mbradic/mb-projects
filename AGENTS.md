@@ -528,6 +528,9 @@ Each agent follows this structure:
 - Generate methodology reports
 - Comment on issues with best practice guidance
 
+**Code Interactions:**
+- None
+
 **Workflow Steps:**
 - Throughout: Available for consultation and guidance
 
