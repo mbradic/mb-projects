@@ -48,6 +48,9 @@ Each agent follows this structure:
 - Create milestones
 - Update issue descriptions
 
+**Code Interactions:**
+- None
+
 **Workflow Steps:**
 - Step 1: Open an issue (with acceptance criteria and context)
 
