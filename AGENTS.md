@@ -625,8 +625,6 @@ Each agent follows this structure:
 
 ---
 
----
-
 **Last Updated**: 2026-06-21  
 **Version**: 1.0.0
 
