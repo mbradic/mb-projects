@@ -601,5 +601,6 @@ After each release:
 - **Original Workflow:** See `WORKFLOW.md`
 - **Agent Definitions:** See `AGENTS.md`
 - **Backlog:** See `BACKLOG.md`
+- **Versioning Strategy:** See `VERSIONING.md`
 - **Git Flow:** https://github.com/nvie/gitflow
 - **Semantic Versioning:** https://semver.org

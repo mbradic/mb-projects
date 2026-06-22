@@ -1,14 +1,10 @@
 # Product Backlog
 
-This document maintains the product backlog for mb-projects and can be updated frequently without triggering a version bump to the README.
-
-## Versioning
-
-Uses semantic versioning (MAJOR.MINOR.PATCH) to track backlog changes independently from the README.
+This document maintains the product backlog for mb-projects. See [`VERSIONING.md`](./VERSIONING.md) for repository-wide versioning and release rules.
 
 ## Backlog Items
 
-| Priority | Item | Status | Version |
+| Priority | Item | Status | Target Release |
 |---|---|---|---|
 | High | Project dashboard with GitHub integration | Ready | v0.1.0 |
 | High | Issue-to-backlog linking system | Ready | v0.1.0 |
@@ -25,4 +21,4 @@ Uses semantic versioning (MAJOR.MINOR.PATCH) to track backlog changes independen
 
 ---
 
-**Last Updated**: 2026-06-21
+**Last Updated**: 2026-06-22
