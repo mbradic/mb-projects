@@ -470,6 +470,9 @@ Each agent follows this structure:
 - Link related issues and PRs
 - Manage GitHub projects and milestones
 
+**Code Interactions:**
+- None
+
 **Workflow Steps:**
 - All steps: Coordinate and monitor progression
 
